@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección 05 - Cómo tocar acordes</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:Arial,sans-serif;
+background:#0f0f0f;
+color:white;
+line-height:1.7
+}
+
+nav{
+height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 7%;
+background:#151515;
+border-bottom:1px solid #292929
+}
+
+nav .nombre{font-size:22px;font-weight:bold}
+
+nav a{color:#aaa;text-decoration:none}
+nav a:hover{color:white}
+
+.hero{
+padding:90px 20px;
+text-align:center;
+background:linear-gradient(180deg,#181818,#0f0f0f)
+}
+
+.numero{
+color:#777;
+font-size:14px;
+font-weight:bold;
+margin-bottom:15px
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px
+}
+
+.hero p{
+max-width:750px;
+margin:auto;
+color:#aaa;
+font-size:19px
+}
+
+.contenido{
+max-width:950px;
+margin:auto;
+padding:70px 25px
+}
+
+.seccion{margin-bottom:65px}
+
+.seccion h2{
+font-size:32px;
+margin-bottom:18px
+}
+
+.seccion p{
+color:#aaa;
+margin-bottom:18px
+}
+
+.tarjetas{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+margin-top:25px
+}
+
+.tarjeta{
+background:#191919;
+border:1px solid #292929;
+border-radius:12px;
+padding:30px
+}
+
+.tarjeta h3{
+font-size:22px;
+margin-bottom:10px
+}
+
+.tarjeta p{
+margin:0
+}
+
+.ejercicio{
+background:#151515;
+border:1px solid #292929;
+border-radius:12px;
+padding:35px
+}
+
+.ejercicio ol{
+padding-left:22px;
+color:#aaa
+}
+
+.ejercicio li{
+margin-bottom:12px
+}
+
+.avisos{
+display:grid;
+gap:15px
+}
+
+.aviso{
+background:#191919;
+border:1px solid #292929;
+border-radius:10px;
+padding:25px
+}
+
+.aviso strong{
+display:block;
+margin-bottom:7px
+}
+
+.navegacion{
+display:flex;
+justify-content:space-between;
+gap:15px;
+margin-top:70px
+}
+
+.boton{
+display:inline-block;
+padding:12px 20px;
+background:white;
+color:#111;
+border-radius:7px;
+text-decoration:none;
+font-weight:bold
+}
+
+.boton:hover{background:#ddd}
+
+.secundario{
+background:#191919;
+color:white;
+border:1px solid #292929
+}
+
+footer{
+padding:30px;
+text-align:center;
+color:#666;
+background:#0b0b0b
+}
+
+@media(max-width:700px){
+.hero h1{font-size:38px}
+
+.tarjetas{
+grid-template-columns:1fr
+}
+
+.navegacion{
+flex-direction:column
+}
+
+.boton{text-align:center}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="nombre">Clases de Guitarra</div>
+<a href="principiante.html">← Volver al curso</a>
+</nav>
+
+<section class="hero">
+<div class="numero">LECCIÓN 05</div>
+<h1>Cómo tocar acordes</h1>
+<p>
+Ahora que conoces tus primeros acordes, aprenderás a conseguir que
+suenen limpios y consistentes.
+</p>
+</section>
+
+<main class="contenido">
+
+<section class="seccion">
+
+<h2>Un acorde limpio</h2>
+
+<p>
+Un acorde no consiste únicamente en colocar los dedos en una posición.
+Tenemos que conseguir que las cuerdas que deben sonar produzcan una nota
+clara y que las que no deben sonar permanezcan controladas.
+</p>
+
+<p>
+Al principio es completamente normal que alguna cuerda suene apagada.
+La solución es localizar el problema y corregir la posición, no apretar
+cada vez más fuerte.
+</p>
+
+</section>
+
+<section class="seccion">
+
+<h2>Los cuatro puntos importantes</h2>
+
+<div class="tarjetas">
+
+<div class="tarjeta">
+<h3>🎯 Punta de los dedos</h3>
+<p>
+Siempre que sea posible, utiliza la punta de los dedos para evitar
+tocar accidentalmente las cuerdas vecinas.
+</p>
+</div>
+
+<div class="tarjeta">
+<h3>✋ Pulgar</h3>
+<p>
+Mantén el pulgar en una posición cómoda detrás del mástil y evita
+apretar el mástil con toda la mano.
+</p>
+</div>
+
+<div class="tarjeta">
+<h3>💪 Presión</h3>
+<p>
+Utiliza solamente la presión necesaria para que la nota suene limpia.
+Más fuerza no significa necesariamente mejor sonido.
+</p>
+</div>
+
+<div class="tarjeta">
+<h3>🎸 Muñeca</h3>
+<p>
+Busca una posición natural y relajada. Si notas tensión excesiva,
+para y vuelve a colocar la mano.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<h2>Comprueba cada cuerda</h2>
+
+<div class="ejercicio">
+
+<ol>
+<li>Forma el acorde A.</li>
+<li>Toca las seis cuerdas una por una, empezando por la más grave.</li>
+<li>Comprueba cuáles deben sonar y cuáles no.</li>
+<li>Si una cuerda suena apagada, modifica ligeramente la posición del dedo.</li>
+<li>Repite el proceso con D y E.</li>
+</ol>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<h2>Errores habituales</h2>
+
+<div class="avisos">
+
+<div class="aviso">
+<strong>❌ Apretar demasiado</strong>
+<p>
+Prueba a reducir la presión. Si la nota sigue sonando limpia, no necesitas
+más fuerza.
+</p>
+</div>
+
+<div class="aviso">
+<strong>❌ Dedos demasiado planos</strong>
+<p>
+Levanta ligeramente los dedos para evitar que toquen las cuerdas vecinas.
+</p>
+</div>
+
+<div class="aviso">
+<strong>❌ Intentar tocar rápido</strong>
+<p>
+Primero consigue acordes limpios. La velocidad llegará después mediante
+la práctica.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<h2>Ejercicio de práctica</h2>
+
+<p>
+Durante unos minutos, forma A, toca el acorde, relaja la mano y vuelve
+a formarlo. Haz lo mismo con D y E.
+</p>
+
+<p>
+La finalidad no es hacerlo rápido. Queremos que tu mano empiece a
+memorizar las posiciones.
+</p>
+
+</section>
+
+<div class="navegacion">
+<a href="leccion4.html" class="boton secundario">← Lección anterior</a>
+<a href="principiante.html" class="boton secundario">Curso</a>
+<a href="leccion6.html" class="boton">Siguiente lección →</a>
+</div>
+
+</main>
+
+<footer>© 2026 Clases de Guitarra</footer>
+
+</body>
+</html>
