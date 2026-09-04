@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lección 03 - Las cuerdas y los trastes</title>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            line-height: 1.7;
+        }
+
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: #151515;
+            border-bottom: 1px solid #292929;
+        }
+
+        nav .nombre {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        nav a:hover { color: white; }
+
+        .hero {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #181818, #0f0f0f);
+        }
+
+        .hero .numero {
+            color: #777;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            color: #aaa;
+            font-size: 19px;
+        }
+
+        .contenido {
+            max-width: 950px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .seccion {
+            margin-bottom: 65px;
+        }
+
+        .seccion h2 {
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .seccion p {
+            color: #aaa;
+            margin-bottom: 18px;
+        }
+
+        .cuerdas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .cuerda {
+            background: #191919;
+            border: 1px solid #292929;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .cuerda strong {
+            display: block;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .cuerda span { color: #888; }
+
+        .trastes {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 25px;
+        }
+
+        .trastes div {
+            padding: 13px 0;
+            border-bottom: 1px solid #292929;
+            color: #aaa;
+        }
+
+        .trastes div:last-child {
+            border-bottom: none;
+        }
+
+        .ejercicio {
+            background: #191919;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .ejercicio h3 {
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .ejercicio ol {
+            padding-left: 22px;
+            color: #aaa;
+        }
+
+        .ejercicio li { margin-bottom: 10px; }
+
+        .recordar {
+            background: #151515;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 35px;
+        }
+
+        .recordar h2 { margin-bottom: 20px; }
+
+        .recordar ul {
+            padding-left: 22px;
+            color: #aaa;
+        }
+
+        .recordar li { margin-bottom: 10px; }
+
+        .navegacion {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 70px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 12px 20px;
+            background: white;
+            color: #111;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .boton:hover { background: #ddd; }
+
+        .secundario {
+            background: #191919;
+            color: white;
+            border: 1px solid #292929;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            background: #0b0b0b;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 38px; }
+
+            .cuerdas {
+                grid-template-columns: 1fr;
+            }
+
+            .navegacion {
+                flex-direction: column;
+            }
+
+            .boton { text-align: center; }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nombre">Clases de Guitarra</div>
+    <a href="principiante.html">← Volver al curso</a>
+</nav>
+
+<section class="hero">
+    <div class="numero">LECCIÓN 03</div>
+    <h1>Las cuerdas y los trastes</h1>
+    <p>
+        Aprende a identificar las cuerdas, los trastes y las primeras notas
+        del mástil.
+    </p>
+</section>
+
+<main class="contenido">
+
+    <section class="seccion">
+        <h2>Las seis cuerdas</h2>
+
+        <p>
+            En una guitarra de seis cuerdas, cada cuerda tiene una afinación
+            determinada. En afinación estándar utilizamos las notas Mi, La,
+            Re, Sol, Si y Mi.
+        </p>
+
+        <div class="cuerdas">
+            <div class="cuerda">
+                <strong>6ª cuerda — Mi grave</strong>
+                <span>La cuerda más gruesa.</span>
+            </div>
+
+            <div class="cuerda">
+                <strong>5ª cuerda — La</strong>
+                <span>Segunda cuerda empezando por la más gruesa.</span>
+            </div>
+
+            <div class="cuerda">
+                <strong>4ª cuerda — Re</strong>
+                <span>Una de las cuerdas centrales.</span>
+            </div>
+
+            <div class="cuerda">
+                <strong>3ª cuerda — Sol</strong>
+                <span>La tercera cuerda.</span>
+            </div>
+
+            <div class="cuerda">
+                <strong>2ª cuerda — Si</strong>
+                <span>Una de las cuerdas más finas.</span>
+            </div>
+
+            <div class="cuerda">
+                <strong>1ª cuerda — Mi agudo</strong>
+                <span>La cuerda más fina.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>¿Qué es un traste?</h2>
+
+        <p>
+            Los trastes son las divisiones metálicas que encontramos a lo largo
+            del mástil. Cuando colocamos un dedo justo detrás de un traste,
+            acortamos la longitud vibrante de la cuerda y obtenemos una nota
+            más aguda.
+        </p>
+
+        <div class="trastes">
+            <div><strong>Cuerda al aire:</strong> no presionamos ningún traste.</div>
+            <div><strong>1º traste:</strong> presionamos la cuerda detrás del primer traste.</div>
+            <div><strong>2º traste:</strong> presionamos detrás del segundo traste.</div>
+            <div><strong>3º traste:</strong> presionamos detrás del tercer traste.</div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h2>Cómo colocar el dedo</h2>
+
+        <p>
+            Cuando pulses una cuerda, intenta colocar el dedo cerca del traste,
+            pero sin ponerlo directamente encima de la barra metálica.
+        </p>
+
+        <p>
+            Presiona únicamente con la fuerza necesaria para que la nota suene
+            limpia. Apretar mucho más fuerte de lo necesario no hará que la nota
+            suene mejor.
+        </p>
+    </section>
+
+    <section class="seccion">
+        <div class="ejercicio">
+            <h3>🎯 Ejercicio: conocer el mástil</h3>
+
+            <ol>
+                <li>Toca cada cuerda al aire.</li>
+                <li>Después toca cada cuerda en el primer traste.</li>
+                <li>Repite utilizando el segundo y tercer traste.</li>
+                <li>Escucha cómo cambia la altura de la nota.</li>
+                <li>Hazlo lentamente y comprueba que cada nota suene limpia.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <div class="recordar">
+            <h2>Lo que debes recordar</h2>
+
+            <ul>
+                <li>Las cuerdas se numeran de 1ª a 6ª.</li>
+                <li>La 1ª es la más fina y la 6ª la más gruesa.</li>
+                <li>Los trastes dividen el mástil.</li>
+                <li>Presiona detrás del traste, no encima de él.</li>
+                <li>Busca siempre que la nota suene limpia.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="navegacion">
+        <a href="leccion2.html" class="boton secundario">← Lección anterior</a>
+        <a href="principiante.html" class="boton secundario">Curso</a>
+        <a href="leccion4.html" class="boton">Siguiente lección →</a>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 Clases de Guitarra
+</footer>
+
+</body>
+</html>
