@@ -4,19 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clases de Guitarra</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        nav {
+            background: #181818;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #1d1d1d;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .niveles {
+            padding: 70px 30px;
+            text-align: center;
+        }
+
+        .niveles h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background: #1d1d1d;
+            padding: 40px 30px;
+            width: 300px;
+            border-radius: 12px;
+        }
+
+        .tarjeta h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta p {
+            color: #bbb;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: white;
+            color: #111;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .como {
+            text-align: center;
+            padding: 70px 30px;
+            background: #181818;
+        }
+
+        .como h2 {
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+
+        .como p {
+            max-width: 700px;
+            margin: auto;
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>🎸 Clases de Guitarra</h1>
+    <nav>
+        <h2>🎸 Clases de Guitarra</h2>
 
-    <p>Aprende guitarra desde cero hasta un nivel avanzado.</p>
+        <div>
+            <a href="#">Inicio</a>
+            <a href="#niveles">Niveles</a>
+            <a href="#como">Cómo aprender</a>
+        </div>
+    </nav>
 
-    <h2>Elige tu nivel</h2>
+    <section class="hero">
+        <h1>Aprende a tocar la guitarra</h1>
+        <p>Clases para todos los niveles, desde tus primeros acordes hasta técnicas avanzadas.</p>
+    </section>
 
-    <button>Principiante</button>
-    <button>Nivel Medio</button>
-    <button>Avanzado</button>
+    <section class="niveles" id="niveles">
+        <h2>Elige tu nivel</h2>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Principiante</h3>
+                <p>Empieza desde cero y aprende tus primeros acordes, ritmos y canciones.</p>
+                <a href="#" class="boton">Ver clases</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Nivel Medio</h3>
+                <p>Mejora tu técnica, aprende escalas, cejillas, pentatónicas e improvisación.</p>
+                <a href="#" class="boton">Ver clases</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Avanzado</h3>
+                <p>Profundiza en armonía, improvisación y técnicas avanzadas de guitarra.</p>
+                <a href="#" class="boton">Ver clases</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="como" id="como">
+        <h2>¿Cómo aprenderás?</h2>
+        <p>
+            Encontrarás las clases organizadas paso a paso para que puedas avanzar
+            a tu ritmo, practicar los ejercicios y volver a las lecciones anteriores
+            cuando lo necesites.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 Clases de Guitarra
+    </footer>
 
 </body>
 </html>
