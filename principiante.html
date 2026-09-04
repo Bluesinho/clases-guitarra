@@ -1,0 +1,331 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarra para Principiantes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f0f0f;
+            color: white;
+            line-height: 1.6;
+        }
+
+        nav {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+            background: #151515;
+            border-bottom: 1px solid #292929;
+        }
+
+        nav .nombre {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            padding: 90px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #181818, #0f0f0f);
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #aaa;
+            font-size: 19px;
+        }
+
+        .contenido {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .introduccion {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .introduccion h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .introduccion p {
+            color: #999;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .lecciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .leccion {
+            background: #191919;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 30px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .leccion:hover {
+            transform: translateY(-4px);
+            border-color: #555;
+        }
+
+        .numero {
+            color: #888;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .leccion h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .leccion p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 18px;
+            background: white;
+            color: #111;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .boton:hover {
+            background: #ddd;
+        }
+
+        .consejos {
+            margin-top: 70px;
+            padding: 40px;
+            background: #151515;
+            border-radius: 12px;
+            border: 1px solid #292929;
+        }
+
+        .consejos h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .consejos ul {
+            padding-left: 20px;
+            color: #aaa;
+        }
+
+        .consejos li {
+            margin-bottom: 10px;
+        }
+
+        .volver {
+            display: inline-block;
+            margin-top: 50px;
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .volver:hover {
+            color: white;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            background: #0b0b0b;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .lecciones {
+                grid-template-columns: 1fr;
+            }
+
+            nav .nombre {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nombre">Clases de Guitarra</div>
+        <a href="index.html">← Volver al inicio</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Guitarra para principiantes</h1>
+
+        <p>
+            Empieza desde cero y aprende paso a paso todo lo necesario
+            para empezar a tocar la guitarra.
+        </p>
+    </section>
+
+    <main class="contenido">
+
+        <section class="introduccion">
+            <h2>Tu camino empieza aquí</h2>
+
+            <p>
+                No necesitas saber nada de guitarra. En este nivel
+                aprenderás desde cómo sujetar correctamente el instrumento
+                hasta tocar tus primeros acordes y canciones.
+            </p>
+        </section>
+
+        <section class="lecciones">
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 01</div>
+                <h3>Conoce tu guitarra</h3>
+                <p>
+                    Aprende las partes de la guitarra, cómo sujetarla
+                    correctamente y cómo cuidar el instrumento.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 02</div>
+                <h3>Cómo afinar la guitarra</h3>
+                <p>
+                    Aprende qué afinación utilizaremos y cómo conseguir
+                    que cada cuerda tenga la afinación correcta.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 03</div>
+                <h3>Las cuerdas y los trastes</h3>
+                <p>
+                    Conoce las seis cuerdas, los trastes y cómo localizar
+                    las notas básicas del mástil.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 04</div>
+                <h3>Tus primeros acordes</h3>
+                <p>
+                    Aprende tus primeros acordes abiertos y empieza
+                    a cambiar entre ellos correctamente.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 05</div>
+                <h3>Cómo tocar acordes</h3>
+                <p>
+                    Aprende a hacer sonar cada cuerda correctamente
+                    y evita los errores más habituales.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 06</div>
+                <h3>Ritmo y rasgueos</h3>
+                <p>
+                    Empieza a trabajar el ritmo y aprende tus primeros
+                    patrones de rasgueo.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 07</div>
+                <h3>Cambios de acordes</h3>
+                <p>
+                    Mejora la velocidad y precisión al cambiar de un
+                    acorde a otro.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+            <article class="leccion">
+                <div class="numero">LECCIÓN 08</div>
+                <h3>Tu primera canción</h3>
+                <p>
+                    Junta todo lo aprendido y aprende a tocar una canción
+                    sencilla utilizando varios acordes.
+                </p>
+                <a href="#" class="boton">Ver lección</a>
+            </article>
+
+        </section>
+
+        <section class="consejos">
+
+            <h2>Consejos para empezar</h2>
+
+            <ul>
+                <li>Practica un poco todos los días en lugar de muchas horas de golpe.</li>
+                <li>Prioriza que los acordes suenen limpios antes de intentar tocar rápido.</li>
+                <li>Utiliza un metrónomo cuando empieces a trabajar el ritmo.</li>
+                <li>No te preocupes si al principio los cambios de acordes son lentos.</li>
+                <li>Repite los ejercicios hasta que puedas hacerlos sin pensar demasiado.</li>
+            </ul>
+
+        </section>
+
+        <a href="index.html" class="volver">← Volver a la página principal</a>
+
+    </main>
+
+    <footer>
+        © 2026 Clases de Guitarra
+    </footer>
+
+</body>
+</html>
+```
