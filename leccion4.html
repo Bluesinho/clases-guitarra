@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lección 04 - Tus primeros acordes</title>
+
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+
+body {
+    font-family:Arial,sans-serif;
+    background:#0f0f0f;
+    color:white;
+    line-height:1.7;
+}
+
+nav {
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 7%;
+    background:#151515;
+    border-bottom:1px solid #292929;
+}
+
+nav .nombre {
+    font-size:22px;
+    font-weight:bold;
+}
+
+nav a {
+    color:#aaa;
+    text-decoration:none;
+}
+
+nav a:hover { color:white; }
+
+.hero {
+    padding:90px 20px;
+    text-align:center;
+    background:linear-gradient(180deg,#181818,#0f0f0f);
+}
+
+.numero {
+    color:#777;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.hero h1 {
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero p {
+    max-width:750px;
+    margin:auto;
+    color:#aaa;
+    font-size:19px;
+}
+
+.contenido {
+    max-width:950px;
+    margin:auto;
+    padding:70px 25px;
+}
+
+.seccion {
+    margin-bottom:65px;
+}
+
+.seccion h2 {
+    font-size:32px;
+    margin-bottom:18px;
+}
+
+.seccion p {
+    color:#aaa;
+    margin-bottom:18px;
+}
+
+.acordes {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.acorde {
+    background:#191919;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+}
+
+.acorde h3 {
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.acorde .forma {
+    font-family:monospace;
+    font-size:20px;
+    margin-bottom:15px;
+    color:#ddd;
+}
+
+.acorde p {
+    font-size:14px;
+}
+
+.pasos {
+    display:grid;
+    gap:15px;
+}
+
+.paso {
+    background:#191919;
+    border:1px solid #292929;
+    border-radius:10px;
+    padding:25px;
+}
+
+.paso strong {
+    display:block;
+    font-size:19px;
+    margin-bottom:8px;
+}
+
+.paso p {
+    margin:0;
+}
+
+.recordar {
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:35px;
+}
+
+.recordar ul {
+    padding-left:22px;
+    color:#aaa;
+}
+
+.recordar li {
+    margin-bottom:10px;
+}
+
+.navegacion {
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    margin-top:70px;
+}
+
+.boton {
+    display:inline-block;
+    padding:12px 20px;
+    background:white;
+    color:#111;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.boton:hover { background:#ddd; }
+
+.secundario {
+    background:#191919;
+    color:white;
+    border:1px solid #292929;
+}
+
+footer {
+    padding:30px;
+    text-align:center;
+    color:#666;
+    background:#0b0b0b;
+}
+
+@media(max-width:700px) {
+    .hero h1 { font-size:38px; }
+
+    .acordes {
+        grid-template-columns:1fr;
+    }
+
+    .navegacion {
+        flex-direction:column;
+    }
+
+    .boton {
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nombre">Clases de Guitarra</div>
+    <a href="principiante.html">← Volver al curso</a>
+</nav>
+
+<section class="hero">
+    <div class="numero">LECCIÓN 04</div>
+    <h1>Tus primeros acordes</h1>
+    <p>
+        Aprende tres acordes abiertos fundamentales y empieza a formar tus
+        primeras progresiones.
+    </p>
+</section>
+
+<main class="contenido">
+
+<section class="seccion">
+
+<h2>¿Qué es un acorde?</h2>
+
+<p>
+Un acorde es un conjunto de notas que suenan al mismo tiempo.
+En la guitarra, normalmente hacemos sonar varias cuerdas mientras
+mantenemos determinadas posiciones con la mano izquierda.
+</p>
+
+<p>
+No intentes aprender muchos acordes de golpe. Lo importante ahora es
+aprender unas pocas posiciones y conseguir que suenen limpias.
+</p>
+
+</section>
+
+<section class="seccion">
+
+<h2>Los tres primeros acordes</h2>
+
+<div class="acordes">
+
+<div class="acorde">
+<h3>A</h3>
+<div class="forma">x 0 2 2 2 0</div>
+<p>
+La 6ª cuerda no se toca. Las cuerdas 5ª y 1ª quedan al aire.
+</p>
+</div>
+
+<div class="acorde">
+<h3>D</h3>
+<div class="forma">x x 0 2 3 2</div>
+<p>
+No toques las dos cuerdas más graves. La 4ª cuerda queda al aire.
+</p>
+</div>
+
+<div class="acorde">
+<h3>E</h3>
+<div class="forma">0 2 2 1 0 0</div>
+<p>
+Las seis cuerdas pueden sonar en este acorde.
+</p>
+</div>
+
+</div>
+
+<p style="margin-top:25px;">
+<strong>Importante:</strong> los números representan los trastes
+desde la 6ª cuerda hasta la 1ª. Una "x" significa que esa cuerda
+no debe sonar y un "0" significa que se toca al aire.
+</p>
+
+</section>
+
+<section class="seccion">
+
+<h2>Cómo estudiar un acorde</h2>
+
+<div class="pasos">
+
+<div class="paso">
+<strong>01 · Coloca los dedos</strong>
+<p>
+Forma el acorde lentamente y comprueba que cada dedo esté en la
+cuerda y traste correspondientes.
+</p>
+</div>
+
+<div class="paso">
+<strong>02 · Toca las cuerdas una por una</strong>
+<p>
+No rasguees todavía. Toca cada cuerda individualmente y escucha
+si todas suenan correctamente.
+</p>
+</div>
+
+<div class="paso">
+<strong>03 · Corrige las cuerdas apagadas</strong>
+<p>
+Si una cuerda no suena, revisa que ningún dedo esté tocándola
+accidentalmente.
+</p>
+</div>
+
+<div class="paso">
+<strong>04 · Rasguea lentamente</strong>
+<p>
+Cuando todas las cuerdas estén claras, toca el acorde completo.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="seccion">
+
+<h2>Tu primer objetivo</h2>
+
+<p>
+No necesitas cambiar rápidamente entre acordes todavía.
+Primero consigue que A, D y E suenen correctamente por separado.
+</p>
+
+<p>
+Cuando puedas formar cada acorde sin tener que pensar demasiado
+en dónde colocar cada dedo, estaremos preparados para empezar a
+trabajar los cambios.
+</p>
+
+</section>
+
+<section class="seccion">
+
+<div class="recordar">
+
+<h2>Lo que debes recordar</h2>
+
+<ul>
+<li>Empieza con pocos acordes.</li>
+<li>Forma el acorde antes de tocarlo.</li>
+<li>Comprueba las cuerdas una por una.</li>
+<li>Busca un sonido limpio, no fuerza excesiva.</li>
+<li>A, D y E serán la base de muchos ejercicios posteriores.</li>
+</ul>
+
+</div>
+
+</section>
+
+<div class="navegacion">
+<a href="leccion3.html" class="boton secundario">← Lección anterior</a>
+<a href="principiante.html" class="boton secundario">Curso</a>
+<a href="leccion5.html" class="boton">Siguiente lección →</a>
+</div>
+
+</main>
+
+<footer>© 2026 Clases de Guitarra</footer>
+
+</body>
+</html>
